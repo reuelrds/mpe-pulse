@@ -42,7 +42,7 @@
     justify-content: center;
 
     &-title {
-      font-size: 2.4rem;
+      font-size: 5rem;
       color: #d69846;
       display: flex;
       flex-direction: column;
@@ -51,12 +51,12 @@
 
   &__logo img {
     display: block;
-    height: 5.4rem;
+    height: 11.6rem;
   }
 
   &__slogan {
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 2.4rem;
     font-family: "Philosopher", sans-serif;
   }
 }
@@ -83,20 +83,17 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 1rem;
 
   &__email {
     display: grid;
     grid-template-columns: 1fr 3fr;
+    align-self: end;
   }
 
-  &__address {
+  &__phone {
     display: grid;
     grid-template-columns: 1fr 3fr;
-
-    &--text {
-      line-height: 1.5;
-    }
   }
 }
 
@@ -108,6 +105,16 @@
   & a {
     text-decoration: none;
     color: #888;
+    padding: 0 0.5rem;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #888;
+    transition: ease-in 0.3s;
+
+    &:hover {
+      color: #fff;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 2px;
+    }
   }
 }
 
@@ -115,11 +122,11 @@
   display: inline-block;
 
   position: absolute;
-  top: -5rem;
-  left: -2rem;
+  top: 0;
+  left: -5rem;
 
   width: 1px;
-  height: 150%;
+  height: 100%;
 
   border: none;
   background-image: radial-gradient(circle, #fff, transparent);
