@@ -9,6 +9,7 @@
   top: 0;
   left: 0;
 
+  &__holder,
   &__container,
   &__container:after {
     position: fixed;
@@ -17,6 +18,15 @@
     top: 0px;
     left: 0px;
     z-index: 0;
+  }
+
+  &__holder {
+    background-image: url("../assets/images/bg1.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+
+    animation: fade 6s normal forwards ease-out;
   }
 
   &__container {
@@ -205,6 +215,19 @@
   40% {
     opacity: 0;
   }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+
   100% {
     opacity: 0;
   }
