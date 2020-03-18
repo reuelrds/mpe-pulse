@@ -1,13 +1,20 @@
 <div class="container">
 
-  <div class="slideshow">
-    <div class="slideshow__holder"></div>
-    <ul class="slideshow__container">
-      <li><span>Image 1</span></li>
-      <li><span>Image 2</span></li>
-      <li><span>Image 3</span></li>
-      <li><span>Image 4</span></li>
-    </ul>
+  <div class="background">
+    <div class="meter">
+      <span class="progress" [ngClass]="{'paused': !showSlideshow}"></span>
+    </div>
+
+    <div class="background-slideshow">
+      <div class="background-slideshow__holder"></div>
+      <ul class="background-slideshow__container">
+
+        <ng-container *ngFor="let i of 4 | range">
+          <li><span [ngClass]="{'paused': !showSlideshow}">Image</span></li>
+        </ng-container>
+
+      </ul>
+    </div>
   </div>
 
 
@@ -59,5 +66,9 @@
       </main>
       <footer class="footer">&copy; 2020 &mdash; Made with &hearts; by <a href="#">Creative Engineers</a> </footer>
     </div>
+  </div>
+
+  <div class="toggle-btn" (click)=onToggleSlideShow()>
+    <a href="#">Toggle Slideshow</a>
   </div>
 </div>

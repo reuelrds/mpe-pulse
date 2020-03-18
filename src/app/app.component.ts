@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Creative Engineers';
+  showSlideshow = true;
+
+  onToggleSlideShow() {
+    this.showSlideshow = !this.showSlideshow;
+  }
 }
