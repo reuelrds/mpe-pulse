@@ -1,8 +1,6 @@
 .container {
   width: 100vw;
   height: 100vh;
-
-
   position: relative;
 }
 
@@ -25,7 +23,7 @@
     &:after {
       content: "";
       background: transparent
-        linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)) repeat top left;
+        linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
     }
 
     & li {
