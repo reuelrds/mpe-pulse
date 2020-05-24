@@ -1,0 +1,74 @@
+<div class="container">
+
+  <div class="background">
+    <div class="meter">
+      <span class="progress" [ngClass]="{'paused': !showSlideshow}"></span>
+    </div>
+
+    <div class="background-slideshow">
+      <div class="background-slideshow__holder"></div>
+      <ul class="background-slideshow__container">
+
+        <ng-container *ngFor="let i of 4 | range">
+          <li><span [ngClass]="{'paused': !showSlideshow}">Image</span></li>
+        </ng-container>
+
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="wrapper">
+    <div class="inner-wrapper">
+      <main class="main">
+        <div class="hero">
+
+          <div class="hero__logo">
+            <img src="../assets/images/logo.png" alt="Creative Engineers Logo">
+            <div class="hero__logo-title">
+              <span>Creative</span> <span>Engineers</span>
+            </div>
+          </div>
+
+          <div class="hero__slogan">
+            <div class="hero__slogan--top-line">
+              If you do it right,
+            </div>
+            <div class="hero__alogan--bottom-line">
+              it will last forever.
+            </div>
+          </div>
+
+        </div>
+
+        <div class="content">
+
+          <div class="content__title">
+            Comming Soon
+          </div>
+          <div class="content__text">
+            Our website is under construction, we are working very hard to give you the best experience with this one.
+          </div>
+        </div>
+
+
+        <div class="contact">
+          <span class="divider"></span>
+          <div class="contact__email">
+            <div class="contact__email--icon">Email</div>
+            <div class="contact__email--text">contact@creativengg.com</div>
+          </div>
+          <div class="contact__phone">
+            <div class="contact__email--icon">Phone</div>
+            <div class="contact__email--text">+91 - 9833899820</div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">&copy; 2020 &mdash; Made with &hearts; by <a href="#">Creative Engineers</a> </footer>
+    </div>
+  </div>
+
+  <div class="toggle-btn" (click)=onToggleSlideShow()>
+    <a href="#">Toggle Slideshow</a>
+  </div>
+</div>
