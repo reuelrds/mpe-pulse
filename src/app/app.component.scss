@@ -4,4 +4,7 @@
 
   background: url("./../assets/images/bg1.jpg");
   background-size: cover;
+
+  display: grid;
+  grid-template-columns: 1fr 0 7fr;
 }
