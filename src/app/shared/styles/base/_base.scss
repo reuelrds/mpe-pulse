@@ -33,13 +33,20 @@ html {
   }
 }
 
+@font-face {
+  font-family: "Average";
+  src: url("./assets/fonts/Average/Average-Regular.ttf") format("truetype");
+}
+
 body {
+  font-family: "Average";
   box-sizing: border-box;
   min-height: 100vh;
   min-width: 100vw;
   font-size: 1.6rem;
   margin: 0;
 }
+
 
 ::-webkit-scrollbar {
   height: 0.4rem;
