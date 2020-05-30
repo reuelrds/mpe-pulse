@@ -1,0 +1,50 @@
+.heading-primary {
+  text-transform: uppercase;
+  /* To remove the upwards shaky movement of the heading primary main and sub */
+  margin-bottom: 6rem;
+
+  &--main {
+    display: block;
+    font-size: 6rem;
+    letter-spacing: .3rem;
+
+    @include respond(phone) {
+      font-size: 5rem;
+    }
+  }
+
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+
+  }
+}
+
+// Secondary heading H2
+.heading-secondary {
+  font-size: 2.8rem;
+  // text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: 2px;
+
+  @include respond(tab-port) {
+    display: inline-block;
+  }
+  @include respond(phone) {
+    letter-spacing: 1px;
+  }
+}
+
+// Tertiary heading H3
+
+.heading-tertiary {
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 2rem;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
