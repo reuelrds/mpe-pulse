@@ -9,3 +9,12 @@
   display: grid;
   grid-template-columns: 1fr 0 4fr;
 }
+
+
+.dark {
+  box-shadow: 10px 0 15px #000;
+}
+
+.light {
+  box-shadow: 5px 0 10px #ccc;
+}
