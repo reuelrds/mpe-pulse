@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HeroComponent } from './hero/hero.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
+import { CapabilityComponent } from './capability/capability.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { AboutComponent } from './about/about.component';
     HeroComponent,
     NavbarComponent,
     AboutComponent,
+    CapabilityComponent,
   ],
   imports: [
     BrowserModule,
