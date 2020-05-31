@@ -1,6 +1,7 @@
 :host {
+  // background-color: rgb(124, 124, 124);
 
-  background-color: rgb(124, 124, 124);
+  background-image: linear-gradient(to top right, rgb(124, 124, 124), #ccc);
 
   display: flex;
   flex-direction: column;
@@ -10,16 +11,13 @@
 }
 
 .logo-container {
-
-
-  width: 80%;
-  padding: 4rem;
-  margin: 0 auto;
-
-  background-color: rgb(124, 124, 124);
-
+  
+  
   &__logos {
-    width: 100%;
+    width: 80%;
+    padding: 4rem;
+    margin: 0 auto;
+    // background-color: rgb(124, 124, 124);
 
     display: flex;
     flex-direction: column;
@@ -42,12 +40,9 @@
 }
 
 .nav-container {
-
-  margin-top: 4rem;
+  // margin-top: 4rem;
 
   &__links > * {
-
-
     & a {
       display: block;
       color: #fff;
@@ -64,13 +59,10 @@
       background-color: rgba($color: #000, $alpha: 0.8);
       box-shadow: 5px 5px 5px rgba($color: #333, $alpha: 0.8);
     }
-
   }
 }
 
-
 .quote-container {
-
   margin: 3rem 5rem;
 
   &__text {
@@ -91,11 +83,20 @@
     background-color: rgba($color: #000, $alpha: 0.8);
     box-shadow: 5px 5px 5px rgba($color: #333, $alpha: 0.8);
   }
-
 }
 
 .active {
   color: white;
   background-color: rgba($color: #000, $alpha: 0.8);
   box-shadow: 5px 5px 5px rgba($color: #333, $alpha: 0.8);
+}
+
+.divider {
+  margin: 3rem auto 3rem auto;
+  display: block;
+  height: 1px;
+  border: none;
+
+  width: 80%;
+  background-image: radial-gradient(circle, #000, transparent);
 }
