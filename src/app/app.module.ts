@@ -7,6 +7,9 @@ import { HeroComponent } from './hero/hero.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
 import { CapabilityComponent } from './capability/capability.component';
+import { QuoteComponent } from './quote/quote.component';
+import { EquipmentComponent } from './equipment/equipment.component';
+import { SampleComponent } from './sample/sample.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +18,9 @@ import { CapabilityComponent } from './capability/capability.component';
     NavbarComponent,
     AboutComponent,
     CapabilityComponent,
+    QuoteComponent,
+    EquipmentComponent,
+    SampleComponent,
   ],
   imports: [
     BrowserModule,
