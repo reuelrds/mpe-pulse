@@ -9,6 +9,7 @@ import { SampleComponent } from './sample/sample.component';
 import { QuoteComponent } from './quote/quote.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full'},
   { path: 'home', component: HeroComponent },
   { path: 'about', component: AboutComponent },
   { path: 'capability', component: CapabilityComponent },
