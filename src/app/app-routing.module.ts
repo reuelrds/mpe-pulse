@@ -8,7 +8,7 @@ import { CapabilityComponent } from './capability/capability.component';
 
 
 const routes: Routes = [
-  { path: '', component: HeroComponent },
+  { path: 'home', component: HeroComponent },
   { path: 'about', component: AboutComponent },
   { path: 'capability', component: CapabilityComponent}
 ];

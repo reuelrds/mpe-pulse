@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.router.events.subscribe((event) => {
-      if (this.router.url === '/') {
+      if (this.router.url === '/home') {
         this.shadow = 'dark';
       } else {
         this.shadow = 'light';
