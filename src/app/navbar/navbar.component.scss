@@ -1,12 +1,11 @@
 :host {
-  // background-color: rgba($color: #fff, $alpha: 0.7);
-  background-color: rgba($color: #fff, $alpha: 1);
+
+  background-color: rgb(124, 124, 124);
 
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  // box-shadow: 5px 0 10px #ccc;
   z-index: 10;
 }
 
@@ -17,10 +16,7 @@
   padding: 4rem;
   margin: 0 auto;
 
-  border-radius: 5px;
-  background: #ffffff;
-  box-shadow:  5px 5px 24px #d9d9d9, 
-              -5px -5px 24px #ffffff;
+  background-color: rgb(124, 124, 124);
 
   &__logos {
     width: 100%;
@@ -36,7 +32,7 @@
 
     & .logo-text {
       margin-top: 2rem;
-      width: 80%;
+      width: 100%;
     }
 
     & .logo-full {
@@ -51,12 +47,10 @@
 
   &__links > * {
 
-    // display: block;
 
     & a {
       display: block;
-      color: #000;
-      // color: #99b898;
+      color: #fff;
       text-decoration: none;
 
       font-size: 2.5rem;
@@ -65,7 +59,7 @@
       text-align: center;
     }
 
-    & a:hover {
+    & a:hover, .active {
       color: white;
       background-color: rgba($color: #000, $alpha: 0.8);
       box-shadow: 5px 5px 5px rgba($color: #333, $alpha: 0.8);
@@ -80,7 +74,7 @@
   margin: 3rem 5rem;
 
   &__text {
-    color: #000;
+    color: #fff;
     font-size: 2.5rem;
     padding: 1rem;
     text-align: center;
