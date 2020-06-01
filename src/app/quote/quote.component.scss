@@ -4,4 +4,88 @@
 
   background-color: white;
   overflow: scroll;
+  position: relative;
+}
+
+.container {
+  display: block;
+  position: absolute;
+  width: 40%;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  padding: 4rem 3rem;
+
+  border-radius: 3px;
+  box-shadow: 3px 3px 10px #888;
+}
+
+.quote-title {
+  text-align: center;
+  margin-bottom: 5rem;
+
+  &__heading {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.form__container {
+  padding: 0 3rem;
+  padding-top: 1rem;
+}
+.quote-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  column-gap: 5rem;
+  row-gap: 2rem;
+
+  &__address,
+  &__subject,
+  &__message {
+    grid-column: 1 / 3;
+  }
+
+  &__button {
+    width: 90%;
+
+    // padding: 1rem 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    border: 0.2rem solid #000;
+
+    font-family: "Average";
+    font-size: 2rem;
+
+    background: linear-gradient(
+      135deg,
+      rgba($color: #000, $alpha: 0.75) 50%,
+      transparent 50%
+    );
+    background-size: 0%;
+    background-repeat: no-repeat;
+
+    transition: all 0.3s linear;
+
+    &:hover {
+      color: #fff;
+
+      box-shadow: 5px 5px 5px rgba($color: #333, $alpha: 0.8);
+      background-size: 300%;
+    }
+  }
+}
+
+.divider {
+  margin: 3rem auto 3rem auto;
+  display: block;
+  height: 1px;
+  border: none;
+
+  width: 80%;
+  background-image: radial-gradient(circle, #000, transparent);
 }

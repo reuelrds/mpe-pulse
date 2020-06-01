@@ -45,6 +45,7 @@
 .paragraph {
   font-size: 2rem;
   line-height: 1.7;
+  text-align: justify;
 
   &:not(:last-child) {
     margin-bottom: 3rem;

@@ -1,1 +1,70 @@
-<p>quote works!</p>
+<div class="container">
+  <div class="quote-title">
+    <h1 class="heading-primary--main quote-title__heading">Contact Us</h1>
+  </div>
+
+  <div class="quote-content">
+    <p class="paragraph">
+      If you are looking for a comprehensive and professional yet friendly
+      service that is fully committed to your requirements, contact us today at
+      Marsh Precision Engineering and compare the difference.
+    </p>
+
+    <span class="divider"></span>
+
+    <div class="form__container">
+      <form
+        class="quote-form"
+        [formGroup]="contactForm"
+        (ngSubmit)="submitForm()"
+      >
+        <!-- Name -->
+        <mat-form-field>
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="name" />
+        </mat-form-field>
+
+        <!-- Company -->
+        <mat-form-field>
+          <mat-label>Company Name</mat-label>
+          <input matInput formControlName="company" />
+        </mat-form-field>
+
+        <!-- Address -->
+        <mat-form-field class="quote-form__address">
+          <mat-label>Address</mat-label>
+          <input matInput formControlName="address" />
+        </mat-form-field>
+
+        <!-- Phone -->
+        <mat-form-field>
+          <mat-label>Phone No.</mat-label>
+          <input matInput formControlName="phone" />
+        </mat-form-field>
+
+        <!-- Email -->
+        <mat-form-field>
+          <mat-label>E-Mail</mat-label>
+          <input matInput formControlName="email" />
+        </mat-form-field>
+
+        <!-- Subject -->
+        <mat-form-field class="quote-form__subject">
+          <mat-label>Subject</mat-label>
+          <input matInput formControlName="subject" />
+        </mat-form-field>
+
+        <!-- Message -->
+        <mat-form-field class="quote-form__message">
+          <mat-label>Message</mat-label>
+          <textarea matInput formControlName="message"></textarea>
+        </mat-form-field>
+
+        <!-- Submit -->
+        <button class="quote-form__button">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
