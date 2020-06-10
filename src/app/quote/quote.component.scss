@@ -14,6 +14,8 @@
   top: 50%;
   left: 50%;
 
+  margin: 5rem 0;
+
   transform: translate(-50%, -50%);
 
   padding: 4rem 3rem;
@@ -30,6 +32,10 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
+}
+
+.paragraph {
+  font-size: 1.8rem;
 }
 
 .form__container {
@@ -88,4 +94,12 @@
 
   width: 80%;
   background-image: radial-gradient(circle, #000, transparent);
+}
+
+.contact-details {
+  list-style: none;
+  line-height: 1.7;
+  font-size: 1.8rem;
+
+  margin-bottom: 1.5rem;
 }
